@@ -1,0 +1,7 @@
+ChatGPT is an artificial intelligence chatbot developed by OpenAI. It uses advanced language models to understand questions and generate human-like responses. ChatGPT can help users with learning, programming, writing, summarizing, brainstorming, problem-solving, translation, and many other tasks.
+
+ChatGPT works by processing the text provided by the user and predicting a useful response based on patterns learned during its training. It can understand context within a conversation and provide explanations according to the user's questions.
+
+ChatGPT is useful for students because it can explain difficult concepts, provide programming examples, help with assignments, generate study notes, and assist with project development. However, its answers should be checked when accuracy is important because AI can sometimes provide incorrect or outdated information.
+
+In simple terms, ChatGPT is an AI-powered conversational assistant that allows people to interact with artificial intelligence using natural language.

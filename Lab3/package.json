@@ -2,10 +2,10 @@
   "name": "lab3",
   "version": "1.0.0",
   "description": "",
-  "main": "prg8.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node prg8.js",
-    "dev":"nodemon prg8.js"
+    "start": "node prg9.js",
+    "dev":"nodemon prg9.js"
   },
   "keywords": [],
   "author": "",

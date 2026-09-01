@@ -3,8 +3,6 @@ import {createReadStream} from "fs";
 
 const serv=http.createServer(async(req,res)=>{
     if(req.url ==="/stream"){
-
-    
     const stream=createReadStream("big-txt",{encoding:"utf-8"})
     stream.pipe(res);
     res.end();
