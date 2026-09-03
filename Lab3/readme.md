@@ -49,3 +49,32 @@ Used when the server sends an HTML file.
 ```js
 res.setHeader("content-type", "text/html");
 ````
+
+
+# Server can send data 
+1.HTML content 
+2.HTML file
+3.json data
+4.plain txt
+5.css
+6.js
+7.files
+
+## Server can set header to send data
+
+1.res.writeHeader()
+2.res.setHeader
+
+## Server can set status code
+1.res.statusCode()
+2.res.writeHeader()
+
+## Request methods 
+
+| Method | Operation | Purpose                                 |
+| ------ | --------- | --------------------------------------- |
+| GET    | READ      | Retrieve data                           |
+| POST   | CREATE    | Create new data                         |
+| PUT    | UPDATE    | Completely update/replace existing data |
+| PATCH  | UPDATE    | Partially update existing data          |
+| DELETE | DELETE    | Remove data                             |
