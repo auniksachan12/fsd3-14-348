@@ -1,7 +1,7 @@
 import http from "http"
 const server=http.createServer((req,res)=>{
-    res.end("<h2>welcome to server side programming</h2>");
+    res.end("<h2>SIH internal</h2>");
 });
 server.listen(5000,()=>{
-    console.log("Server is running");
+    console.log("SIH Server is running");
 });
