@@ -1,0 +1,13 @@
+{
+  "name": "lab4",
+  "version": "1.0.0",
+  "description": "1.create project folder\r 2.right click on project folder and select open in integrated terminal\r ![alt text](./image.png)\r 3.type in terminal `npm init -y` press enter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
