@@ -2,15 +2,15 @@ let teams = [
   {
     id: 1,
     tname: "Rusty",
-    tl: "Aunik sachan",
-    email: "aunik.sachan@gmail.com",
+    tl: "Aashish Raj Singh",
+    email: "ashi.raj@gmail.com",
     members: 6,
   },
   {
     id: 2,
     tname: "Code Crafters",
-    tl: "Ayush patel",
-    email: "Ayush.patel@gmail.com",
+    tl: "Manisha Singh",
+    email: "mani.singh@gmail.com",
     members: 5,
   },
 ];
@@ -34,9 +34,10 @@ export const updateTeamById = (id, updateTeam) => {
   return team;
 };
 
+
 export const deleteTeam = (id) => {
   const index = teams.findIndex((team) => team.id === id);
   if (index == -1) return false;
   teams.splice(index, 1);
-  return true;  
+  return true;
 };
