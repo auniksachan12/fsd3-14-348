@@ -7,15 +7,25 @@ const h1 = {
   rating: 4.5
 };
 
-function Book() {
+const h2 = {
+  picUrl: "https://m.media-amazon.com/images/I/71CDMyWkq0L._SY342_.jpg",
+  bname: "React Key Concepts",
+  price: 2275,
+  quantity: 6,
+  rating: 5
+};
+
+function Book(props) {
+
+  console.log(props);
   return (
     <div>
-      <img src={h1.picUrl} alt={h1.bname} />
+      <img src={props.book.picUrl} alt={props.book.bname} />
 
-      <h1>{h1.bname}</h1>
-      <h2>Price: {h1.price}</h2>
-      <h3>Quantity: {h1.quantity}</h3>
-      <h3>Rating: {h1.rating}</h3>
+      <h1>{props.book.bname}</h1>
+      <h2>Price: {props.book.price}</h2>
+      <h3>Quantity: {props.book.quantity}</h3>
+      <h3>Rating: {props.book.rating}</h3>
     </div>
   );
 }
@@ -23,11 +33,11 @@ function Book() {
 export default function App() {
   return (
     <>
-      <Book />
+      <Book book={h1}/>
       <h1>Hello React</h1>
-      <Book />
-      <Book />
-      <Book />
+      <Book book={h2}/>
+      <Book book={h2}/>
+      <Book book={h2}/>
     </>
   );
 }
