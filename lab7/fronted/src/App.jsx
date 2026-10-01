@@ -1,4 +1,3 @@
-
 const h1 = {
   picUrl: "https://m.media-amazon.com/images/I/518+W2zr3BL._AC_UY327_FMwebp_QL65_.jpg",
   bname: "The Road to React",
@@ -32,16 +31,23 @@ const h4 = {
 };
 
 function Book(props) {
-  console.log(props);
-
+  const { picUrl, bname, price, quantity, rating } = props.book;
+  const qtyStyle={
+    fontSize:"1rem",
+    color:"blue",
+    textAlign:"center ",
+    backgroundColor:"yellow",
+    padding:"10px"
+  }
   return (
     <div>
-      <img src={props.book.picUrl} alt={props.book.bname} />
+      <img src={picUrl} alt={bname} srcSet="" />
 
-      <h1>{props.book.bname}</h1>
-      <h2>Price: {props.book.price}</h2>
-      <h3>Quantity: {props.book.quantity}</h3>
-      <h3>Rating: {props.book.rating}</h3>
+      <h1>{bname}</h1>
+      <h2>Price: {price}</h2>
+      <h3>Quantity: {quantity}</h3>
+      <h4 style={qtyStyle}>Rating: {rating}</h4>
+      <button>Buy now</button>
     </div>
   );
 }
@@ -49,6 +55,8 @@ function Book(props) {
 export default function App() {
   return (
     <>
+    <h1>Online Book Store</h1>
+    <div className="container">
       <Book book={h1} />
 
       <h1>Hello React</h1>
@@ -56,6 +64,7 @@ export default function App() {
       <Book book={h2} />
       <Book book={h3} />
       <Book book={h4} />
+    </div>
     </>
   );
 }

@@ -20,3 +20,8 @@
 2. it must starts with capital letter
 3. it should be treated as html tag
 4. it must be closed
+
+
+# object distructure
+does not depends on order, if property is not available then it intialize with null.
+const { rating, bname, price, quantity, picUrl } = props.book;
