@@ -21,7 +21,7 @@ f. select install and start the frontend
 1. simple js function return html  directly.
 2. it must start with a capital letter.
 3. it should be treated as html tag.
-4. it must br closed.
+4. it must be closed.
 
 # object distructure
 does not depends on order, if property is not available then it intialize with null.
@@ -39,3 +39,6 @@ any components include styles:
       }
       '''
  3. inline css : in this method we use two curly braces with style attribute all the css property must be single word for eg:- text-align becomes text-Align
+
+
+ By default the button type is submit button 
